@@ -11,7 +11,7 @@ file.copy(from = list.files(source, full.names = TRUE),
 
 ## Parameter testing
 source <- '/media/data4/shared/ipsc_manuscript/analysis/perturbseq/output/density/parameter_testing/'
-dest <- '/media/data4/shared/density_heatmap/plots/parameter_testing'
+dest <- '/media/data4/shared/density_heatmap/plots/parameters_v2'
 
 dir.create(dest, showWarnings = FALSE, recursive = TRUE)
 
@@ -28,8 +28,7 @@ options(httr_oob_default=TRUE)
 ss <- drive_get('Overarching Plan: human neural lncRNA')
 
 ### Write to googlesheets
-parameter_table <- read_tsv('plots/parameter_testing/parameter_table.tsv')
-
+parameter_table <- read_tsv('plots/parameters_v2/parameter_table.tsv')
 write_sheet(parameter_table, ss = ss, sheet = "density_parameters")
 
 
