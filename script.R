@@ -1,7 +1,7 @@
 ## Individual target density plots
 #source <- '/media/data4/shared/ipsc_manuscript/analysis/perturbseq/output/density/normalized_density/all'
 source <- '/media/data4/shared/ipsc_manuscript/analysis/perturbseq/output/cell_states/dbscan_plots/'
-dest <- '/media/data4/shared/density_heatmap/plots/dbscan_v1'
+dest <- '/media/data4/shared/density_heatmap/plots/dbscan_v2'
 
 dir.create(dest, showWarnings = FALSE, recursive = TRUE)
 
